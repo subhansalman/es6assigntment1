@@ -51,7 +51,7 @@ for (var i=0; i<=4; i++ ){
 
     setTimeout(()=>{
         console.log("Variable I ki value= ",i);
-    },4000);
+    },3000);
 }
 
 console.log("Loop khatam hogaya")
@@ -74,9 +74,9 @@ for(let i=0; i<=5; i++){
 
     setTimeout(()=>{
         console.log("Conts ki Value= ",value)
-    },6000)
+    },5000)
 }
 
 setTimeout( ()=>{
     console.log("All delays finished")
-},8000)
+},6000)
