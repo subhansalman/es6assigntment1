@@ -46,3 +46,37 @@ try {
     console.log(error.message)
 }
 
+
+for (var i=0; i<=4; i++ ){
+
+    setTimeout(()=>{
+        console.log("Variable I ki value= ",i);
+    },4000);
+}
+
+console.log("Loop khatam hogaya")
+
+
+
+for (let i=0; i<=4; i++ ){
+
+    setTimeout(()=>{
+        console.log("let I ki value= ",i);
+    },2000);
+}
+
+console.log("let ka Loop khatam hogaya")
+
+
+
+for(let i=0; i<=5; i++){
+    const value=i
+
+    setTimeout(()=>{
+        console.log("Conts ki Value= ",value)
+    },6000)
+}
+
+setTimeout( ()=>{
+    console.log("All delays finished")
+},8000)
