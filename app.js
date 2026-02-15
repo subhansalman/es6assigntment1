@@ -82,3 +82,24 @@ const end=()=>{
 }
 
 end()
+
+
+
+
+const messageGenerataor=()=>{
+
+let userName=document.getElementById("userName").value
+let course=document.getElementById("userCourse").value
+let userPercentage=document.getElementById("userPercetage").value
+
+    return(`Hello ${userName}
+    Congratulations on completing ${course}.
+    You have completed ${userPercentage}% of the course.
+    Keep up the great work!`)
+}
+
+const handleSubmit=()=>{
+    let message=messageGenerataor()
+    document.getElementById("task").innerHTML=message
+}
+
