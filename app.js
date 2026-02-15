@@ -47,36 +47,38 @@ try {
 }
 
 
-for (var i=0; i<=4; i++ ){
 
+
+
+
+for (var i=0; i<4; i++){
     setTimeout(()=>{
-        console.log("Variable I ki value= ",i);
-    },3000);
+        console.log("Var ki value =",i)
+        
+    },2000
+    )
 }
-
-console.log("Loop khatam hogaya")
-
-
-
-for (let i=0; i<=4; i++ ){
-
-    setTimeout(()=>{
-        console.log("let I ki value= ",i);
-    },2000);
-}
-
-console.log("let ka Loop khatam hogaya")
-
-
 
 for(let i=0; i<=5; i++){
-    const value=i
-
     setTimeout(()=>{
-        console.log("Conts ki Value= ",value)
+                console.log("let ki value =",i)
+    },4000)
+}
+
+
+for(let i=0; i<=7; i++){
+    const value=i
+    
+    setTimeout(()=>{
+                console.log("Const ki value =",value)
     },5000)
 }
 
-setTimeout( ()=>{
-    console.log("All delays finished")
-},6000)
+
+const end=()=>{
+    setTimeout(()=>{
+        console.log("All delays are finished")
+    },6000)
+}
+
+end()
