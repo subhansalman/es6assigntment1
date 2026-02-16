@@ -130,4 +130,19 @@ const resultGenerator=()=>{
 }
 
 
+let taskThree={
+    name:"Subhan",
+    generalfunction:function(){
+        console.log("Regularfunction behaviour while using this",this.name)
+    },
+    arrowFunction: ()=>{
+        console.log("Arrow Function behaviour while using this",this.name)
+    },
+
+    
+}
+taskThree.generalfunction()
+taskThree.arrowFunction()
+
+
 
