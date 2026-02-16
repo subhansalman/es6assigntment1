@@ -153,3 +153,13 @@ console.log(arr.map(num => num*2))
 console.log(arr.map((num)=>{
     return num*2
 }))
+
+
+
+setTimeout(() => {
+    console.log("arrow function ")
+}, 1000);
+
+setTimeout(function(){
+    console.log("Normal function")
+},2000)
