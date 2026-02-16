@@ -103,3 +103,31 @@ const handleSubmit=()=>{
     document.getElementById("task").innerHTML=message
 }
 
+
+
+
+const resultGenerator=()=>{
+    let userPercentage=document.getElementById("userPercentage1").value
+    userPercentage=Number(userPercentage)
+    let userResult=document.getElementById("result")
+    
+    if(userPercentage >= 85){
+        userResult.innerHTML=`Your percentage is ${userPercentage} and your grade A <br> Congratulatios!`
+        userResult.style.color="Green"
+    }else if(userPercentage >= 75){
+        userResult.innerHTML=`Your percentage is ${userPercentage} and your grade B`
+        userResult.style.color="Green"
+    }else if(userPercentage >= 65){
+        userResult.innerHTML=`Your percentage is ${userPercentage} and your grade C`
+        userResult.style.color="yellow"
+    }else if(userPercentage >= 50){
+        userResult.innerHTML=`Your percentage is ${userPercentage} and your grade D`
+        userResult.style.color="orange"
+    }else{
+        userResult.innerHTML=`Your percentage is ${userPercentage} and you're FAIL`
+        userResult.style.color="red"
+    }
+}
+
+
+

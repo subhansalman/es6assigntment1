@@ -9,18 +9,30 @@
 <body>
     <h1>ES6 first assignment</h1>
 
-    <h3>Task 2.1</h3>
-    <label for="userName">Name</label>
-    <input type="text" id="userName">
-    <br>
+    <div>
+
+        <h3>Task 2.1</h3>
+        
+        <label for="userName">Name</label>
+        <input type="text" id="userName">
+        <br>
         <label for="userCourse">Course</label>
-    <input type="text" id="userCourse">
-    <br>
+        <input type="text" id="userCourse">
+        <br>
         <label for="userPercetage">Percetage</label>
-    <input type="number" id="userPercetage">
-    <br>
-    <button onClick="handleSubmit()">Submit</button>
-    <p id="task"></p>
+        <input type="number" id="userPercetage">
+        <br>
+        <button onClick="handleSubmit()">Submit</button>
+        <p id="task"></p>
+    </div>
+
+    <div>
+        <h3>Pass / Fail and Grade </h3>
+        <label for="userPercentage">Enter your Percetage</label>
+        <input type="number" id="userPercentage1">
+        <button onclick="resultGenerator()">Submit</button>
+        <p id="result"></p>
+    </div>
     <script src="./app.js"></script>
 </body>
 </html>
